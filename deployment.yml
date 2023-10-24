@@ -26,8 +26,9 @@ metadata:
   name: reddit
 spec:
   selector:
-    app.kubernetes.io/name: reddit
+    app: reddit
   ports:
     - protocol: TCP
       port: 80
       targetPort: 3000
+  type: LoadBalancer
